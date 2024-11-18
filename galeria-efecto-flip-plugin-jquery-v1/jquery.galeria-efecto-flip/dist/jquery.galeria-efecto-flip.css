@@ -1,0 +1,44 @@
+/*  ****************************************************************************  */
+/*  **********  /galeria-efecto-flip-plugin-jquery-v1/css/styles.css  **********  */
+/*  ****************************************************************************  */
+
+
+.main {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+#galeria {
+    margin: 0 auto;
+    margin-top: 50px;
+    padding: 50px;
+    background: linear-gradient(to bottom, #aaa, #eee, #aaa);
+}
+
+#foto{	
+	cursor:pointer;
+}
+
+.botonera{
+	width: 600px;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: #ffffff;
+}
+
+.botones{
+	cursor:pointer;
+    transition: all 300ms ease-in-out;
+}
+
+.botones:hover {
+    transform: scale(1.1);
+}

@@ -1,0 +1,92 @@
+<!--  ************************************************************************  -->
+<!--  **********  /galeria-efecto-flip-plugin-jquery-v1/index.html  **********  -->
+<!--  ************************************************************************  -->
+
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title> Mosaico Fotos Efecto Flip Random con jQuery </title>
+
+    <!--  **********  Favicon  **********  -->
+    <link rel="icon" href="img/jquery-icon.png">
+
+    <!--  **********  Estilos CSS  ----------  -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="./jquery.galeria-efecto-flip/dist/jquery.galeria-efecto-flip.css">
+
+    <!--  **********  Librerías de jQuery, jQuery Flip y jquery.galeria-efecto-flip.js  **********  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"> </script>
+        
+    <!--  -----  libreria para el efecto flip  -----  -->
+    <script src="./jquery.galeria-efecto-flip/dist/jquery.flip.min.js"> </script>
+
+    <!--  -----  plugin galeria-efecto-flip  -----  -->
+    <script src="./jquery.galeria-efecto-flip/dist/jquery.galeria-efecto-flip.min.js"> </script>
+
+</head>
+
+<body>
+
+    <!--  **********  Header o Cabecera  **********  -->
+    <header class="header">
+
+        <h1> Galeria Efecto Flip </h1>
+        <hr>
+
+    </header>
+
+    <!--  **********  Contenido  **********  -->
+    <main class="main">
+
+        <section id="galeria">
+
+            <!--  *****  Se renderiza la Galeria mediante el plugin  *****  -->
+
+            <!--  -----  Esto es lo que crea dinamicamente el plugin  -----
+                <div id="foto"> <img src="fondos/fondo1.jpg" width="600px" height='400px' /> </div>
+
+                <div class="botonera">
+
+                    <div class="botones" id="inicio"> <img src="fondos/botones/inicio.png" width="50px" alt="inicio" height="40px" /> </div>
+                    <div class="botones" id="atras"> <img alt="atrás" src="fondos/botones/atras.png" width="50px" height="40px" /> </div>
+                    <div class="botones" id="play"> <img alt="play" src="fondos/botones/play.png" width="50px" height="40px" /> </div>
+                    <div class="botones" id="stop"> <img alt="stop" src="fondos/botones/stop.png" width="50px" height="40px" /> </div>
+                    <div class="botones" id="adelante"> <img alt="adelante" src="fondos/botones/adelante.png" width="50px" height="40px" /> </div>
+                    <div class="botones" id="fin"> <img alt="último" src="fondos/botones/fin.png" width="50px" height="40px" /> </div>
+
+                </div>
+            -->
+
+        </section>
+
+    </main>
+
+</body>
+
+
+<script>
+
+    $(document).ready(function () {
+        
+        console.warn('----------  Documento Cargado!!!  ----- ', 'CDN Google - jQuery version:', $.fn.jquery, ' ----------', '\n');
+
+        //  -----  Llamada del Plugins  -----
+        $("#galeria").galeriaEfectoFlip({
+            numFondos: 6,
+            intervalo: 2000,
+            rutaFondos: 'fondos/',
+            rutaBotones: 'fondos/botones/',
+            widthImg: 800,
+            heightImg: 500
+        });
+    });
+
+</script>
+
+
+
+
+</html>

@@ -1,0 +1,69 @@
+/*  ********************************************************************************************  */
+/*  **********  /01-todo-jquery-de-novato-a-experto/02-jquery-ejercicios-ejemplos/  ************  */
+/*  **********  /seccion14-galeria-efecto-flip/51-galeria-efecto-flip/css/styles.css  **********  */
+/*  ********************************************************************************************  */
+
+
+body {
+    background: linear-gradient(to bottom, #aaa, #eee, #aaa);
+}
+
+.header {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid green;
+}
+
+h1 {
+    font-size: 56px;
+    color: #FCF7CD;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: #FFA500;
+    text-align: center;
+}
+
+.main {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+
+/*  **********  */
+
+.galeria {
+    margin-top: 50px;
+    padding: 50px;
+    background: linear-gradient(to bottom, #aaa, #eee, #aaa);
+}
+
+#foto{	
+	cursor:pointer;
+}
+
+.botonera{
+	width: 600px;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: #ffffff;
+}
+
+.botones{
+	cursor:pointer;
+    transition: all 300ms ease-in-out;
+}
+
+.botones:hover {
+    transform: scale(1.1);
+}

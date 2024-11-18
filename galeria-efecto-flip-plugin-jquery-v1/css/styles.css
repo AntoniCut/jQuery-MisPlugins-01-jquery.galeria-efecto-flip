@@ -1,0 +1,26 @@
+/*  ****************************************************************************  */
+/*  **********  /galeria-efecto-flip-plugin-jquery-v1/css/styles.css  **********  */
+/*  ****************************************************************************  */
+
+
+body {
+    background: linear-gradient(to bottom, #aaa, #eee, #aaa);
+}
+
+.header {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid green;
+}
+
+h1 {
+    font-size: 56px;
+    color: #FCF7CD;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: #FFA500;
+    text-align: center;
+}
